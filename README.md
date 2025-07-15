@@ -57,19 +57,19 @@
 ### API 설계
 API 설계
 1. 사용자 관리 API
-   POST   /api/auth/signup     - 회원가입
-   POST   /api/auth/login      - 로그인
+   POST   /api/v1/auth/signup     - 회원가입
+   POST   /api/v1/auth/login      - 로그인
 2. 대화 관리 API
-   POST   /api/chats           - 대화 생성
-   GET    /api/chats           - 대화 목록 조회 (페이지네이션, 정렬)
-   DELETE /api/threads/{id}    - 스레드 삭제
+   POST   /api/v1/chats           - 대화 생성
+   GET    /api/v1/chats           - 대화 목록 조회 (페이지네이션, 정렬)
+   DELETE /api/v1/threads/{id}    - 스레드 삭제
 3. 피드백 관리 API
-   POST   /api/feedbacks       - 피드백 생성
-   GET    /api/feedbacks       - 피드백 목록 조회 (페이지네이션, 필터링)
-   PUT    /api/feedbacks/{id}/status - 피드백 상태 변경 (관리자만)
+   POST   /api/v1/feedbacks       - 피드백 생성
+   GET    /api/v1/feedbacks       - 피드백 목록 조회 (페이지네이션, 필터링)
+   PUT    /api/v1/feedbacks/{id}/status - 피드백 상태 변경 (관리자만)
 4. 분석 및 보고 API
-   GET    /api/analytics/activity    - 사용자 활동 기록 요청 (관리자만)
-   GET    /api/reports/daily         - 보고서 생성 요청 (관리자만)
+   GET    /api/v1/analytics/activity    - 사용자 활동 기록 요청 (관리자만)
+   GET    /api/v1/reports/daily         - 보고서 생성 요청 (관리자만)
 
 ### 코드작성
 #### 로그인 기능 구현
